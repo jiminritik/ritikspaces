@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;RitikSpace — Projects, Experiments &amp; Ideas&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="Ritik Raj — a small, fast personal site to share projects, experiments and ideas." /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="theme-color" content="#0ea5e9" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Open Graph --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:title" content="RitikSpace — Projects, Experiments &amp; Ideas" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:description" content="Ritik Raj — a small, fast personal site to share projects, experiments and ideas." /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:type" content="website" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:url" content="https://jiminritik.github.io/ritikspaces/" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:image" content="https://avatars.githubusercontent.com/u/000000?v=4" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Tailwind CSS (CDN) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>tailwind.config = {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>theme: {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>extend: {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>fontFamily: { display: ['Inter', 'ui-sans-serif', 'system-ui'], body: ['Inter', 'ui-sans-serif', 'system-ui'] },</p>
+<p class="p1"><span class="Apple-converted-space">          </span>colors: {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>brand: {</p>
+<p class="p1"><span class="Apple-converted-space">              </span>50:'#eff6ff',100:'#dbeafe',200:'#bfdbfe',300:'#93c5fd',400:'#60a5fa',500:'#3b82f6',600:'#2563eb',700:'#1d4ed8',800:'#1e40af',900:'#1e3a8a'</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">          </span>},</p>
+<p class="p1"><span class="Apple-converted-space">          </span>boxShadow: { soft: '0 10px 30px -12px rgba(0,0,0,0.25)' }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>darkMode: 'class'</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>html{scroll-behavior:smooth}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.reveal{opacity:0; transform: translateY(12px); transition:.6s ease}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.reveal.in{opacity:1; transform:none}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="bg-white text-slate-800 dark:bg-slate-950 dark:text-slate-200 font-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Header / Nav --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;header class="sticky top-0 z-50 backdrop-blur bg-white/70 dark:bg-slate-950/60 border-b border-slate-200/50 dark:border-slate-800/60"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#home" class="flex items-center gap-2 font-extrabold tracking-tight text-xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="inline-block w-2.5 h-2.5 rounded-full bg-brand-500 animate-pulse"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Ritik&lt;span class="text-brand-600"&gt;Space&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;nav class="hidden sm:flex gap-6 text-sm font-medium"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="hover:text-brand-600" href="#about"&gt;About&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="hover:text-brand-600" href="#projects"&gt;Projects&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="hover:text-brand-600" href="#skills"&gt;Skills&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="hover:text-brand-600" href="#contact"&gt;Contact&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="flex items-center gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button id="themeToggle" class="rounded-xl px-3 py-1.5 text-sm border border-slate-300/70 dark:border-slate-700 hover:shadow-soft transition"&gt;🌙&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://github.com/jiminritik" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-1 rounded-xl px-3 py-1.5 text-sm bg-brand-600 text-white hover:bg-brand-700 shadow-soft"&gt;GitHub&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Hero --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="home" class="relative overflow-hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="grid md:grid-cols-2 gap-10 items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="reveal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h1 class="font-display text-4xl sm:text-6xl font-extrabold leading-tight"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Hi, I'm &lt;span class="text-brand-600"&gt;Ritik Raj&lt;/span&gt; — I build web things 🚀</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="mt-5 text-base sm:text-lg text-slate-600 dark:text-slate-400"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Welcome to my tiny place on the internet where I share projects, experiments and notes while learning in public.</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="mt-7 flex flex-wrap gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#projects" class="px-5 py-2.5 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700 shadow-soft"&gt;See Projects&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#contact" class="px-5 py-2.5 rounded-xl border border-slate-300/70 dark:border-slate-700 hover:shadow-soft"&gt;Contact / Hire&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="reveal md:justify-self-end"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="relative"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="absolute inset-0 bg-gradient-to-tr from-brand-300/40 via-transparent to-brand-600/20 blur-2xl -z-10"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="https://source.unsplash.com/collection/190727/480x360" alt="code and coffee" class="rounded-2xl shadow-soft w-full max-w-md mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- About --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="about" class="border-t border-slate-200/60 dark:border-slate-800/60"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="grid md:grid-cols-3 gap-10 items-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="reveal md:col-span-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2 class="text-2xl sm:text-3xl font-bold"&gt;About Me&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="mt-3 text-slate-600 dark:text-slate-400"&gt;Web dev enthusiast focused on clean UI, performance, and delightful details. I learn fast, ship often, and document the journey.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;dl class="mt-6 text-sm grid grid-cols-2 gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;&lt;dt class="text-slate-500"&gt;Location&lt;/dt&gt;&lt;dd&gt;India (IST)&lt;/dd&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;&lt;dt class="text-slate-500"&gt;Open to&lt;/dt&gt;&lt;dd&gt;Internships &amp; freelance&lt;/dd&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;&lt;dt class="text-slate-500"&gt;Email&lt;/dt&gt;&lt;dd&gt;&lt;a class="underline" href="mailto:ritikraj.dev@proton.me"&gt;ritikraj.dev@proton.me&lt;/a&gt;&lt;/dd&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;&lt;dt class="text-slate-500"&gt;GitHub&lt;/dt&gt;&lt;dd&gt;&lt;a class="underline" href="https://github.com/jiminritik" target="_blank" rel="noopener"&gt;@jiminritik&lt;/a&gt;&lt;/dd&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/dl&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="reveal md:col-span-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="grid sm:grid-cols-2 gap-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="p-5 rounded-2xl border border-slate-200/70 dark:border-slate-800 bg-white/60 dark:bg-slate-900/50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;h3 class="font-semibold"&gt;What I'm learning&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="mt-3 list-disc list-inside text-slate-600 dark:text-slate-400"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Modern React &amp; Next.js&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;TypeScript basics&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Clean CSS with Tailwind&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="p-5 rounded-2xl border border-slate-200/70 dark:border-slate-800 bg-white/60 dark:bg-slate-900/50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;h3 class="font-semibold"&gt;What I enjoy&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="mt-3 list-disc list-inside text-slate-600 dark:text-slate-400"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Building small, fast web apps&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Debugging gnarly CSS&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;Documenting learnings for others&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Skills --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="skills" class="border-t border-slate-200/60 dark:border-slate-800/60"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="reveal text-2xl sm:text-3xl font-bold"&gt;Skills&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="reveal grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 mt-6 text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="px-3 py-2 rounded-xl border border-slate-200/70 dark:border-slate-800"&gt;HTML&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="px-3 py-2 rounded-xl border border-slate-200/70 dark:border-slate-800"&gt;CSS&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="px-3 py-2 rounded-xl border border-slate-200/70 dark:border-slate-800"&gt;JavaScript&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="px-3 py-2 rounded-xl border border-slate-200/70 dark:border-slate-800"&gt;Tailwind&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="px-3 py-2 rounded-xl border border-slate-200/70 dark:border-slate-800"&gt;C / C++&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="px-3 py-2 rounded-xl border border-slate-200/70 dark:border-slate-800"&gt;Git &amp; GitHub&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Projects --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="projects" class="border-t border-slate-200/60 dark:border-slate-800/60"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="reveal flex items-end justify-between gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-2xl sm:text-3xl font-bold"&gt;Featured Projects&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="text-sm underline" href="https://github.com/jiminritik?tab=repositories" target="_blank" rel="noopener"&gt;All repos →&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Card 1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="reveal p-5 rounded-2xl border border-slate-200/70 dark:border-slate-800 bg-white/60 dark:bg-slate-900/50 hover:shadow-soft transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="font-semibold"&gt;RitikSpace&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="mt-2 text-sm text-slate-600 dark:text-slate-400"&gt;This site! A single-file, fast personal homepage built with Tailwind and a tiny JS sprinkle.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="mt-3 flex gap-3 text-xs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="px-2 py-1 rounded-lg border"&gt;HTML&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="px-2 py-1 rounded-lg border"&gt;Tailwind&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="inline-block mt-4 text-sm underline" href="#"&gt;Code soon&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Card 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="reveal p-5 rounded-2xl border border-slate-200/70 dark:border-slate-800 bg-white/60 dark:bg-slate-900/50 hover:shadow-soft transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="font-semibold"&gt;Mini Tools&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="mt-2 text-sm text-slate-600 dark:text-slate-400"&gt;A growing set of tiny utilities for everyday tasks — from color pickers to unit converters.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="mt-3 flex gap-3 text-xs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="px-2 py-1 rounded-lg border"&gt;JS&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="px-2 py-1 rounded-lg border"&gt;CSS&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="inline-block mt-4 text-sm underline" href="#"&gt;Live demo&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Card 3 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="reveal p-5 rounded-2xl border border-slate-200/70 dark:border-slate-800 bg-white/60 dark:bg-slate-900/50 hover:shadow-soft transition"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3 class="font-semibold"&gt;C / DSA Lab&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="mt-2 text-sm text-slate-600 dark:text-slate-400"&gt;Notes, solved exercises and visual explanations while learning core CS.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="mt-3 flex gap-3 text-xs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="px-2 py-1 rounded-lg border"&gt;C&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="px-2 py-1 rounded-lg border"&gt;Algorithms&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="inline-block mt-4 text-sm underline" href="#"&gt;Read more&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Contact --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="contact" class="border-t border-slate-200/60 dark:border-slate-800/60"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-20"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="reveal text-2xl sm:text-3xl font-bold"&gt;Contact / Hire&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="reveal mt-2 text-slate-600 dark:text-slate-400"&gt;Have an idea, project, or opportunity? Let’s talk.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;form action="https://formspree.io/f/your-form-id" method="POST" class="reveal mt-6 grid gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid sm:grid-cols-2 gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;input class="w-full px-4 py-3 rounded-xl border border-slate-300/70 dark:border-slate-700 bg-white/70 dark:bg-slate-900/50" type="text" name="name" placeholder="Your name" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;input class="w-full px-4 py-3 rounded-xl border border-slate-300/70 dark:border-slate-700 bg-white/70 dark:bg-slate-900/50" type="email" name="email" placeholder="Your email" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;textarea class="w-full px-4 py-3 rounded-xl border border-slate-300/70 dark:border-slate-700 bg-white/70 dark:bg-slate-900/50" name="message" rows="5" placeholder="Write your message…" required&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="justify-self-start px-5 py-2.5 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700 shadow-soft" type="submit"&gt;Send Message&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="reveal mt-4 text-sm"&gt;Prefer email? &lt;a class="underline" href="mailto:ritikraj.dev@proton.me"&gt;ritikraj.dev@proton.me&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Footer --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer class="border-t border-slate-200/60 dark:border-slate-800/60"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 text-sm flex flex-col sm:flex-row items-center justify-between gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;© &lt;span id="year"&gt;&lt;/span&gt; RitikSpace. Built with ❤️ and vanilla HTML.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="flex items-center gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="underline" href="#home"&gt;Back to top&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="underline" href="/sitemap.xml"&gt;Sitemap&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Dark mode toggle (remembers preference)</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const themeBtn = document.getElementById('themeToggle');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const root = document.documentElement;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const stored = localStorage.getItem('theme');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (stored === 'dark' || (!stored &amp;&amp; window.matchMedia('(prefers-color-scheme: dark)').matches)) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>root.classList.add('dark');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>themeBtn.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>root.classList.toggle('dark');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>themeBtn.textContent = root.classList.contains('dark') ? '☀️' : '🌙';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Year</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('year').textContent = new Date().getFullYear();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Simple reveal on scroll</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const observer = new IntersectionObserver((entries) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>entries.forEach(e =&gt; { if (e.isIntersecting) e.target.classList.add('in'); });</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}, { threshold: 0.1 });</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.reveal').forEach(el =&gt; observer.observe(el));</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- (Optional) Lightweight analytics: uncomment to enable Plausible</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script defer data-domain="jiminritik.github.io" src="https://plausible.io/js/script.js"&gt;&lt;/script&gt; --&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
